@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>서식태그 예제</title>
+</head>
+<body>
+	<!-- 
+		태그 종류
+		-block 태그
+			-시작 위치 : 새 라인
+			-크기 변경 : O
+			-종류 : 시멘틱 태그, h1~h6, p, div 등
+		-inline 태그: 줄바꿈이 발생하지 않는 태그, 블록 단위로 화면에 표시되지 않음
+			-시작 위치 : 현재 위치
+			-크기 변경 : X
+			-종류 : a, span, img 등
+		-inline-block 태그: 여는 태그와 닫는 태그(위 두 태그의 특징이 섞이슨)
+			-시작 위치 : 현재 위치
+			-크기 변경 : O
+			-종류 : button, input 등
+	-->
+	<div>
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+	</div>
+	<div>
+		<span>4</span>
+		<span>5</span>
+		<span>6</span>
+	</div>
+<!-- 위에 스팬에는 엔터에 의한 공백이 생기슨 -->
+<!-- 
+p.41
+h1~h6 태그
+	-제목을 나타내는 태그
+	-크기 순서: h1 > h2 > h3 > h4 > h5 > h6(숫자가 낮을수록 글자 크기가 큼)
+	-글자 사이에 마진이라는 공백이있음
+-->
+	<h1>제목1</h1>
+	<h2>제목2</h2>
+	<h3>제목3</h3>
+	<h4>제목4</h4>
+	<h5>제목5</h5>
+	<h6>제목6</h6>
+	<!-- 
+	p 태그
+		-문단을 나타내는 태그
+		-글자 사이에(위 아래) 마진이라는 공백이 있음
+		-주로 뉴스 기사 문단에서 사용
+
+	lorem 숫자
+	-글자 수를 지정하면 해당 글자 수만큼 랜덤한 글자를 생성
+		-vs code 에서 제공하는 기능
+		-샘플 문자열이 필요한 경우 사용
+	-->
+	<p>Lorem20</p> 
+	안녕
+	<!-- 로렘 엔터 시 20개의 단어 생성 -->
+	 <!-- p.44
+		div 태그
+			-대표적인 블락 태그
+			-기능은 없음
+			-태그들을 묵어 관리 시 사용 -->
+
+	<!-- 
+	p.45
+	strong 태그 vs b 태그
+	-공통: 인라인 태그, 글자를 굵게 표시하는 태그
+	-차이: 
+		-strong 태그: 글자에 강조할 때 사용하는데=> 스크린 리더기가 강하게 읽음
+		-b 태그: 글자에 의미를 부여하지 않고 단순히 굵게 표시할 때 사용
+	em 태그 vs i 태그
+		-공통: 인라인 태그, 글자를 기울임꼴로 표시
+		-차이 : 약하게 강조시 사용=> 스크린 리더기가 약하게 읽음
+	-->
+	<h1>strong , b 태그, em , i 태그</h1>
+	<p>안녕하세요 저는 <strong>홍길동</strong>입니다. 직업은 <em>도둑</em>입니다
+	</p>
+	<p>안녕하세요 저는 <b>홍길동</b>입니다. 직업은 <i>도둑</i>입니다
+	</p>
+
+	<!-- 
+	p.47
+		span 태그
+		-인라인 태그
+		-글자에 의미를 부여하지 않고 단순히 스타일을 적용할 때 사용
+		-보통 문자들을 묶거나 문자들 중 일부에 스타일을 적용할 때 사용
+
+		br 태그
+		-줄 바꿈
+		-스크린 리더기가 이 태그를 읽음
+
+		hr 태그
+		-수평선(가로줄)
+	-->
+
+	<h1>span 태그 예제</h1>
+	<p>안녕하세요 저는 <span style="color: red;">홍길동</span>입니다. 직업은 <span style="font-size: 30px;">도둑!!!!!!</span>입니다
+	<hr>
+	</p>
+
+	<!-- 
+	p.48
+		image 태그
+		-이미지를 화면에 표시할 때 사용하는 태그
+		-inline-block 태그
+		-속성
+			-src: 이미지 경로를 지정
+			-alt: 이미지가 표시되지 않을 때 대체 텍스트를 지정
+			-width: 이미지의 너비를 지정, auto를 지정
+			-height: 이미지의 높이를 지정, auto를 지정
+	-width와 height의 오토 사용 방법
+		-width나 height 중 하나만 지정하고 나머지 하나는 auto를 지정
+		=> 비율이 깨지지 않음.
+	-->
+		<img alt="자치고 낡은 가나디" src="https://img1.daumcdn.net/thumb/R1280x0.fwebp/?fname=http://t1.daumcdn.net/brunch/service/user/cnoC/image/tNWE6ahM8L07uaj81q4HjFD6qrY" width="200px" height="200">
+		<img alt="자치고 낡은 가나디" src="https://img1.daumcdn.net/thumb/R1280x0.fwebp/?fname=http://t1.daumcdn.net/brunch/service/user/cnoC/image/tNWE6ahM8L07uaj81q4HjFD6qrY" width="50%" height="50%">
+		<img alt="자치고 낡은 가나디" src="https://img1.daumcdn.net/thumb/R1280x0.fwebp/?fname=http://t1.daumcdn.net/brunch/service/user/cnoC/image/tNWE6ahM8L07uaj81q4HjFD6qrY" width="200" height="auto">
+	</body>
+</html>
