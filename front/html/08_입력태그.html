@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>미디어태그</title>
+</head>
+<body>
+	<!-- 
+	p.65
+	audio 태그
+	-오디오 파일을 재생하는 태그
+	-속성
+		-controls: 컨트롤러를 보여줌
+		-autoplay: 자동재생, 브라우저 설정에 따라 자동 재생이 안 될 수 있음
+		-loop: 반복
+		-preload: 재생 전 다운로드를 할지 말지를 결정
+			-none: 미리 받지 않음
+			-matadata: 메타 데이터만 미리 바듬
+			-auto: 미리 받음
+		-컨트롤러를 생략하고 자동재생을 설정하는 건 비추, 웹 표준 의반
+	-->
+	<audio src="https://cdn.pixabay.com/audio/2026/04/13/audio_e7598378a8.mp3" controls loop preload="metadata">
+	</audio>
+
+
+	<!-- 
+	p.67
+	비디오 태그
+		-영상을 재생하는 태그
+		-속성
+			-오디오 태그 속성을 사용
+			-poster: 재생 전 보여줄 이미지
+			-width/height: 너비/높이를 지정
+	-->
+		<video src="https://cdn.pixabay.com/video/2026/04/24/348656_large.mp4" controls loop preload="metadata" poster="" width="400"></video>
+</body>
+</html>
